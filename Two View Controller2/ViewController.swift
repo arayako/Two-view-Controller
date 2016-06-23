@@ -19,6 +19,17 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func GotoSecond(sender: AnyObject) {
+        
+        let goToSecond = self.storyboard?.instantiateViewControllerWithIdentifier("arayaView") as! ArayaViewController
+        
+        self.navigationController?.pushViewController(goToSecond, animated: true)
+        
+    }
+    
+    
+    
 
 
 }
